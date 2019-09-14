@@ -1,0 +1,13 @@
+<p>create-market</p>
+<form (ngSubmit)="doSubmit()">
+  <div>
+    Name <input type="text" name="name" id="name" [(ngModel)]="market.name">
+  </div>
+  <div>
+    Description <input type="text" name="description" id="description" [(ngModel)]="market.description">
+  </div>
+  <div>
+    <input type="submit" value="submit">
+  </div>
+
+</form>

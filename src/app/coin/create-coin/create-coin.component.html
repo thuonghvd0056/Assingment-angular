@@ -1,0 +1,38 @@
+<p>create-coin</p>
+
+<form (ngSubmit)="doSubmit()">
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text" name="name" id="name" [(ngModel)]="coin.name" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="helpId" class="text-muted">name</small>
+  </div>
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text"  name="baseAsset" id="baseAsset" [(ngModel)]="coin.baseAsset" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="base" class="text-muted">baseAsset</small>
+  </div>
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text"  name="quoteAsset" id="quoteAsset" [(ngModel)]="coin.quoteAsset" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="quote" class="text-muted">quoteAsset</small>
+  </div>
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text"  name="lastPrice" id="lastPrice" [(ngModel)]="coin.lastPrice" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="last" class="text-muted">lastPrice</small>
+  </div>
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text"  name="volumn24h" id="volumn24h" [(ngModel)]="coin.volumn24h" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="volumn" class="text-muted">volumn24h</small>
+  </div>
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text"  name="marketId" id="marketId" [(ngModel)]="coin.marketId" class="form-control" placeholder="" aria-describedby="helpId">
+    <small id="market" class="text-muted">marketId</small>
+  </div>
+  <div>
+    <input type="submit" value="submit">
+  </div>
+
+</form>

@@ -1,0 +1,15 @@
+<p>list-market</p>
+<table class="table" >
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let market of markets">
+    <td>{{market.name}}</td>
+    <td>{{market.description}}</td>
+  </tr>
+  </tbody>
+</table>

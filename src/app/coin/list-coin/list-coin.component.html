@@ -1,0 +1,25 @@
+<p>list-coin</p>
+
+<table class="table" >
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>baseAsset</th>
+    <th>quoteAsset</th>
+    <th>lastPrice</th>
+    <th>volumn24h</th>
+    <th>marketId</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let market of coins">
+    <td>{{market.name}}</td>
+    <td>{{market.baseAsset}}</td>
+    <td>{{market.quoteAsset}}</td>
+    <td>{{market.lastPrice}} </td>
+    <td>{{market.volumn24h}}</td>
+    <td>{{market.marketId}}</td>
+  </tr>
+  </tbody>
+</table>
+
